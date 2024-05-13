@@ -163,7 +163,7 @@ function sendEmail() {
   var message = document.getElementById("message").value;
   var subject = "New Message from " + fullname;
   //var body = "Hello, " + fullname + ".\n\nYou have received a new message:\n\n" + message;
-  var body = message;
+  var body = "Name:" + fullname + "\nContact mail ID:" + email + "\n\n" + message + "\n";
   
   var mailtoLink = "mailto:hariharanjvp2205@outlook.com?cc=&subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
 
